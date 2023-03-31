@@ -11,14 +11,9 @@ const http = require("http");
 const server = http.createServer((req, res) => {
   console.log("A new request recieved");
   res.end(content.data);
-//   console.log(req);
+  //   console.log(req);
 });
 
 server.listen(5000, "127.0.0.1", () => {
   console.log("Server started...");
 });
-
-// for (let codes in http.STATUS_CODES) {
-//   console.log(`${codes} => ${http.STATUS_CODES[codes]}`);
-// }
-// // console.log(http.STATUS_CODES);
